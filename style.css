@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    display: block;
+}
+
+#endingImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+    max-width: 90%;
+    max-height: 90%;
+    pointer-events: none;
+    z-index: 10;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #00ff99;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 0 20px #00ff99;
+    transition: transform 0.3s ease;
+}
+
+#startButton:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
